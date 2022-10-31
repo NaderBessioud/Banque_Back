@@ -1,5 +1,10 @@
 package tn.banque.Entities;
 
+
+
+
+
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,11 +23,12 @@ public class RDV {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idRDV")
 	private long idRDV;
-	@Column(name = "heure")
-	private long heure;
+	
 	@Temporal(TemporalType.DATE)
     @Column(name = "daterdv")
 	private Date daterdv;
+    @Column(name = "heure")
+	private String heure;
 	@Column(name = "typerdv")
 	private TypeRDV typerdv;
 	
@@ -31,6 +37,57 @@ public class RDV {
 	
 	@ManyToOne
 	private User client;
+
+	public long getIdRDV() {
+		return idRDV;
+	}
+
+	public void setIdRDV(long idRDV) {
+		this.idRDV = idRDV;
+	}
+
+	
+	public Date getDaterdv() {
+		return daterdv;
+	}
+
+	public void setDaterdv(Date daterdv) {
+		this.daterdv = daterdv;
+	}
+
+	public String getHeure() {
+		return heure;
+	}
+
+	public void setHeure(String heure) {
+		this.heure = heure;
+	}
+
+	public TypeRDV getTyperdv() {
+		return typerdv;
+	}
+
+	public void setTyperdv(TypeRDV typerdv) {
+		this.typerdv = typerdv;
+	}
+
+	public User getEmployee() {
+		return employee;
+	}
+
+	public void setEmployee(User employee) {
+		this.employee = employee;
+	}
+
+	public User getClient() {
+		return client;
+	}
+
+	public void setClient(User client) {
+		this.client = client;
+	}
+	
+	
 	
 	
 
