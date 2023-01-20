@@ -1,0 +1,44 @@
+idO,coupon,cours,dateemission,maturite,prixemission,prixrembourssement,vn,description,emetteur
+0,2.0,1.0,2022/11/01,1.0,1.0,1.0,1200,taux variable,biat
+1,2.0,1.0,2022/11/01,1.0,1.0,1.0,1200,taux fixe,biat
+2,2.0,1.0,2022/11/01,1.0,1.0,1.0,1200,taux fixe,biat
+3,3.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,zitouna
+4,4.0,1.0,2022/11/01,1.0,1.0,1.0,950,taux variable,al baraka
+5,5.0,1.0,2022/11/01,1.0,1.0,1.0,700,zero coupon,enda tamwil
+6,6.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux variable,amena takefol
+7,7.0,1.0,2022/11/01,1.0,1.0,1.0,1400,taux variable,taysir microfinance
+8,8.0,1.0,2022/11/01,1.0,1.0,1.0,2000,taux fixe,cosmitto
+9,9.0,1.0,2022/11/01,1.0,1.0,1.0,1250,taux fixe,aziza
+10,10.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux variable,geant
+11,11.0,1.0,2022/11/01,1.0,1.0,1.0,1100,taux variable,hannibal leasing
+12,12.0,1.0,2022/11/01,1.0,1.0,1.0,1900,taux fixe,sofrecom
+13,13.0,1.0,2022/11/01,1.0,1.0,1.0,850,taux variable,vermeg
+14,14.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,poulina
+15,15.0,1.0,2022/11/01,1.0,1.0,1.0,1450,taux fixe,sfbt
+16,16.0,1.0,2022/11/01,1.0,1.0,1.0,1600,taux variable,cactus prod
+17,4.0,1.0,2022/11/01,1.0,1.0,1.0,950,taux fixe,el hiwar tounsi
+18,5.0,1.0,2022/11/01,1.0,1.0,1.0,700,zero coupon,etat
+19,6.0,1.0,2022/11/01,1.0,1.0,1.0,1300,zero coupon,atb
+20,7.0,1.0,2022/11/01,1.0,1.0,1.0,1400,taux variable,magasin general
+21,8.0,1.0,2022/11/01,1.0,1.0,1.0,2000,taux variable,myteck
+22,9.0,1.0,2022/11/01,1.0,1.0,1.0,1250,taux fixe,monoprix
+23,10.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux fixe,carrefour
+24,11.0,1.0,2022/11/01,1.0,1.0,1.0,1100,zero coupon,etat
+25,12.0,1.0,2022/11/01,1.0,1.0,1.0,1900,taux variable,biat
+26,13.0,1.0,2022/11/01,1.0,1.0,1.0,850,taux fixe,bh bank
+27,14.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,uib leasing
+28,15.0,1.0,2022/11/01,1.0,1.0,1.0,1450,taux variable,uib
+29,16.0,1.0,2022/11/01,1.0,1.0,1.0,1600,taux variable,atb
+30,4.0,1.0,2022/11/01,1.0,1.0,1.0,950,taux variable,tunisie leasing
+31,5.0,1.0,2022/11/01,1.0,1.0,1.0,700,taux variable,gat assurance
+32,6.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux variable,star assurance
+33,7.0,1.0,2022/11/01,1.0,1.0,1.0,1400,zero coupon,etat
+34,8.0,1.0,2022/11/01,1.0,1.0,1.0,2000,taux fixe,etat
+35,9.0,1.0,2022/11/01,1.0,1.0,1.0,1250,taux fixe,bh bank
+36,10.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux fixe,wiki
+37,11.0,1.0,2022/11/01,1.0,1.0,1.0,1100,taux variable,bna
+38,12.0,1.0,2022/11/01,1.0,1.0,1.0,1900,taux variable,stb
+39,13.0,1.0,2022/11/01,1.0,1.0,1.0,850,taux fixe,biat
+40,14.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,attijari bank
+41,15.0,1.0,2022/11/01,1.0,1.0,1.0,1450,taux variable,bh leasing
+42,16.0,1.0,2022/11/01,1.0,1.0,1.0,1600,taux fixe,bh assurance
