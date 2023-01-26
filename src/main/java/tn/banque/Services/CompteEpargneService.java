@@ -1,17 +1,27 @@
 package tn.banque.Services;
 
+import java.security.Principal;
 import java.util.List;
 
 import org.apache.commons.math3.util.Precision;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import tn.banque.Entities.Compteepargne;
+import tn.banque.Entities.Notifications;
 import tn.banque.Entities.TypeEpargne;
 import tn.banque.Repositories.CompteEpargneRepository;
 
 @Service
 public class CompteEpargneService implements CompteEpargneServiceInter{
+	
+	@Autowired
+    private SimpMessagingTemplate template;
 	@Autowired
 	private CompteEpargneRepository compteEpargneRepository;
 
@@ -189,6 +199,7 @@ public class CompteEpargneService implements CompteEpargneServiceInter{
 	}
 	@Override
 	public double ContributionTotale(double vers,String type,String typeP,int p) {
+		
 		double result=0;
 		if(type.equals("mensuel")) {
 			if(typeP.equals("mois")) {

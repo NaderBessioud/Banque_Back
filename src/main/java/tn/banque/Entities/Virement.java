@@ -1,5 +1,6 @@
 package tn.banque.Entities;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,28 +12,77 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Virement {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idV")
 	private long idV;
-	@Column(name = "RIB")
-	private String RIB;
-	@Column(name = "RIBR")
-	private String RIBR;
+	@Column(name = "ribe")
+	private String ribe;
+	@Column(name = "ribr")
+	private String ribr;
 	@Column(name = "somme")
 	private float somme;
-	@Column(name = "heure")
-	private String heure;
-	@Temporal(TemporalType.DATE)
     @Column(name = "date")
-	private Date date;
-	@Column(name = "typev")
-	private TypeV typev;
-	
+	private Timestamp date;
+    
+    @JsonIgnore
 	@ManyToOne
-	private Comptebancaire comptebancairev;
+	Comptecourrant virementcompte;
+
+	public long getIdV() {
+		return idV;
+	}
+
+	public void setIdV(long idV) {
+		this.idV = idV;
+	}
+
+	public String getRibe() {
+		return ribe;
+	}
+
+	public void setRibe(String ribe) {
+		this.ribe = ribe;
+	}
+
+	public String getRibr() {
+		return ribr;
+	}
+
+	public void setRibr(String ribr) {
+		this.ribr = ribr;
+	}
+
+	public float getSomme() {
+		return somme;
+	}
+
+	public void setSomme(float somme) {
+		this.somme = somme;
+	}
+
+	public Timestamp getDate() {
+		return date;
+	}
+
+	public void setDate(Timestamp date) {
+		this.date = date;
+	}
+
+	public Comptecourrant getVirementcompte() {
+		return virementcompte;
+	}
+
+	public void setVirementcompte(Comptecourrant virementcompte) {
+		this.virementcompte = virementcompte;
+	}
+    
+    
+    
 	
 
 }

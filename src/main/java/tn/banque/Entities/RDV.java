@@ -29,8 +29,9 @@ public class RDV {
 	private Date daterdv;
     @Column(name = "heure")
 	private String heure;
-	@Column(name = "typerdv")
-	private TypeRDV typerdv;
+
+	@Column(name = "frais")
+	private float frais;
 	
 	@ManyToOne
 	private User employee;
@@ -63,13 +64,7 @@ public class RDV {
 		this.heure = heure;
 	}
 
-	public TypeRDV getTyperdv() {
-		return typerdv;
-	}
 
-	public void setTyperdv(TypeRDV typerdv) {
-		this.typerdv = typerdv;
-	}
 
 	public User getEmployee() {
 		return employee;
@@ -85,6 +80,14 @@ public class RDV {
 
 	public void setClient(User client) {
 		this.client = client;
+	}
+
+	public float getFrais() {
+		return frais;
+	}
+
+	public void setFrais(float frais) {
+		this.frais = frais;
 	}
 	
 	

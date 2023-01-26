@@ -19,6 +19,8 @@ public class Salaire {
 	private long idSalaire;
 	@Column(name="salairebase")
 	private int salairebase;
+	@Column(name="salairenet")
+	private float salairenet;
 	@Temporal(TemporalType.DATE)
     @Column(name = "dataperception")
 	private Date dataperception;
@@ -31,6 +33,73 @@ public class Salaire {
 	
 	@ManyToOne
 	private User employeesal;
+
+	public long getIdSalaire() {
+		return idSalaire;
+	}
+
+	public void setIdSalaire(long idSalaire) {
+		this.idSalaire = idSalaire;
+	}
+
+	public int getSalairebase() {
+		return salairebase;
+	}
+
+	public void setSalairebase(int salairebase) {
+		this.salairebase = salairebase;
+	}
+
+	public float getSalairenet() {
+		return salairenet;
+	}
+
+	public void setSalairenet(float salairenet) {
+		this.salairenet = salairenet;
+	}
+
+	public Date getDataperception() {
+		return dataperception;
+	}
+
+	public void setDataperception(Date dataperception) {
+		this.dataperception = dataperception;
+	}
+
+	public int getHeuresup() {
+		return heuresup;
+	}
+
+	public void setHeuresup(int heuresup) {
+		this.heuresup = heuresup;
+	}
+
+	public float getProdheuresup() {
+		return prodheuresup;
+	}
+
+	public void setProdheuresup(float prodheuresup) {
+		this.prodheuresup = prodheuresup;
+	}
+
+	public float getImpotrevenu() {
+		return impotrevenu;
+	}
+
+	public void setImpotrevenu(float impotrevenu) {
+		this.impotrevenu = impotrevenu;
+	}
+
+	public User getEmployeesal() {
+		return employeesal;
+	}
+
+	public void setEmployeesal(User employeesal) {
+		this.employeesal = employeesal;
+	}
+	
+	
+	
 	
 	
 	

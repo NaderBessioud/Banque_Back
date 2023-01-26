@@ -3,17 +3,21 @@ package tn.banque.Entities;
 import java.util.Date;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 public class User {
@@ -54,28 +58,67 @@ public class User {
 	@Column(name = "conge")
 	private boolean conge;
 	
+	@Column(name="approved")
+	private boolean approved;
+	
+	@Column(name="fumer")
+	private boolean fumer;
+	@Column(name="salaire")
+	private float salaire;
+	
+	@Transient
+	private String token;
+	
 	@OneToOne
 	private Patrimoine patrimoine;
+	
+	@JsonIgnore
+	@ManyToMany 
+	private Set<Produitassurance> produitassurances;
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "employee")
 	private Set<RDV> employeerdv;
 	
 	@JsonIgnore
+	@OneToMany(mappedBy = "sender")
+	private Set<Message> sendermessages;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy ="receiver")
+	private Set<Message> receivermessages;
+	
+	
+	
+	
+	@JsonIgnore
 	@OneToMany(mappedBy = "client")
 	private Set<RDV> clientrdv;
-	
+	@JsonIgnore
 	@OneToMany(mappedBy = "employeesal")
 	private Set<Salaire> salaires;
-	
+	@JsonIgnore
 	@OneToMany(mappedBy = "employeecon")
 	private Set<Conge> conges;
 	
-	@OneToMany(mappedBy = "clientcr")
-	private Set<Credit> credits;
 	
-	@OneToMany(mappedBy = "clcomptes")
-	private Set<Comptebancaire> comptebancaires;
+	
+	@JsonIgnore
+	@OneToMany(cascade=CascadeType.ALL,mappedBy="usercomptebancaire")
+	private Set<Comptebancaire> comptebancaireuser;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy = "user")
+	private Set<Notifications> notifications;
+	
+	@JsonIgnore
+	@ManyToMany(mappedBy = "users")
+	private Set<Formation> formations;
+	
+	@Transient
+	private boolean online;
+	
+	
 
 	public User() {
 		super();
@@ -227,6 +270,11 @@ public class User {
 	public Set<RDV> getEmployeerdv() {
 		return employeerdv;
 	}
+	
+	@OneToMany(mappedBy = "clientcr")
+	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+	private Set<Credits> credits;
+	
 
 	public void setEmployeerdv(Set<RDV> employeerdv) {
 		this.employeerdv = employeerdv;
@@ -257,21 +305,119 @@ public class User {
 		this.conges = conges;
 	}
 
-	public Set<Credit> getCredits() {
+
+
+	public Set<Credits> getCredits() {
 		return credits;
 	}
 
-	public void setCredits(Set<Credit> credits) {
+	public void setCredits(Set<Credits> credits) {
 		this.credits = credits;
 	}
 
-	public Set<Comptebancaire> getComptebancaires() {
-		return comptebancaires;
+	
+
+	public boolean isApproved() {
+		return approved;
 	}
 
-	public void setComptebancaires(Set<Comptebancaire> comptebancaires) {
-		this.comptebancaires = comptebancaires;
+	public void setApproved(boolean approved) {
+		this.approved = approved;
 	}
+
+	public boolean isFumer() {
+		return fumer;
+	}
+
+	public void setFumer(boolean fumer) {
+		this.fumer = fumer;
+	}
+
+	public Set<Notifications> getNotifications() {
+		return notifications;
+	}
+
+	@JsonIgnore
+	public void setNotifications(Set<Notifications> notifications) {
+		this.notifications = notifications;
+	}
+
+	public float getSalaire() {
+		return salaire;
+	}
+
+	public void setSalaire(float salaire) {
+		this.salaire = salaire;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public boolean isOnline() {
+		return online;
+	}
+
+	public void setOnline(boolean online) {
+		this.online = online;
+	}
+	
+	
+
+	public Set<Formation> getFormations() {
+		return formations;
+	}
+
+	public void setFormations(Set<Formation> formations) {
+		this.formations = formations;
+	}
+
+	@Override
+	public String toString() {
+		return "User [idEmployee=" + idEmployee + ", nom=" + nom + ", prenom=" + prenom + ", password=" + password
+				+ ", addresse=" + addresse + ", telephone=" + telephone + ", email=" + email + ", ville=" + ville
+				+ ", quartier=" + quartier + ", codepostal=" + codepostal + ", role=" + role + ", pays=" + pays
+				+ ", CIN=" + CIN + ", datanaissance=" + datanaissance + ", createdat=" + createdat + ", conge=" + conge
+				+ ", approved=" + approved + ", fumer=" + fumer + ", salaire=" + salaire + ", online=" + online + "]";
+	}
+
+	public Set<Produitassurance> getProduitassurances() {
+		return produitassurances;
+	}
+
+	public void setProduitassurances(Set<Produitassurance> produitassurances) {
+		this.produitassurances = produitassurances;
+	}
+
+	public Set<Message> getSendermessages() {
+		return sendermessages;
+	}
+
+	public void setSendermessages(Set<Message> sendermessages) {
+		this.sendermessages = sendermessages;
+	}
+
+	public Set<Message> getReceivermessages() {
+		return receivermessages;
+	}
+
+	public void setReceivermessages(Set<Message> receivermessages) {
+		this.receivermessages = receivermessages;
+	}
+
+	public Set<Comptebancaire> getComptebancaireuser() {
+		return comptebancaireuser;
+	}
+
+	public void setComptebancaireuser(Set<Comptebancaire> comptebancaireuser) {
+		this.comptebancaireuser = comptebancaireuser;
+	}
+	
+	
 	
 	
 	

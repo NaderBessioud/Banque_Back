@@ -1,5 +1,6 @@
 package tn.banque.Controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class CompteEpargneController {
 	private CompteEpargneServiceInter  compteEpargneService;
 	 @Autowired
 	    private SimpMessagingTemplate template;
-	 private Notifications notifications=new Notifications("title","content");
+	 
 	
 	@GetMapping("/CompteEpargnes")
 	@ResponseBody
@@ -94,7 +95,9 @@ public class CompteEpargneController {
 	@GetMapping("/simulatePM")
 	@ResponseBody
 	public double simulateCEPM(@RequestParam("type") TypeEpargne type,@RequestParam("mens") float mens,@RequestParam("init") float init,@RequestParam("p") int periode,@RequestParam("typeV") String typeV) {
-		  template.convertAndSend("/topic/notification", notifications);
+		 
+		 
+		
 		if(typeV.equals("mensuel"))
 			return compteEpargneService.simulatePM(type, mens, init, periode);
 		else if(typeV.equals("semestriel"))

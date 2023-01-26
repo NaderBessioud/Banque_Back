@@ -34,8 +34,7 @@ public class Bilan {
 	@OneToMany(mappedBy = "bilana")
 	private Set<Bilanannuel> bilanannuels;
 	
-	@ManyToMany
-	private Set<Actif> actifs;
+	
 	
 	@ManyToMany
 	private Set<Passif> passifs;
