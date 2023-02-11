@@ -1,0 +1,44 @@
+idO,coupon,cours,dateemission,maturite,prixemission,prixrembourssement,vn,description,emetteur,frequencecoupon,imageob
+0,2.0,1.0,2022/11/01,1.0,1.0,1.0,1200,taux variable,biat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033521/logo_biat_300x300.png1676033524389.png
+1,2.0,1.0,2022/11/01,1.0,1.0,1.0,1200,taux fixe,biat,Semi-annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033521/logo_biat_300x300.png1676033524389.png
+2,2.0,1.0,2022/11/01,1.0,1.0,1.0,1200,taux fixe,biat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033521/logo_biat_300x300.png1676033524389.png
+3,3.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,zitouna,Semi-annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033617/ZITOUNA.png1676033620541.png
+4,4.0,1.0,2022/11/01,1.0,1.0,1.0,950,taux variable,al baraka,Mensuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033723/t%C3%A9l%C3%A9chargement%20%281%29.png1676033727308.png
+5,5.0,1.0,2022/11/01,1.0,1.0,1.0,700,zero coupon,enda tamwil,Trimestriel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033783/Enda-Tamweel.jpg1676033787017.jpg
+6,6.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux variable,amena takefol,Mensuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033854/logo-El-Amana-Simple2.png1676033856193.png
+7,7.0,1.0,2022/11/01,1.0,1.0,1.0,1400,taux variable,taysir microfinance,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033256/t%C3%A9l%C3%A9chargement.jpg1676033259341.jpg
+8,8.0,1.0,2022/11/01,1.0,1.0,1.0,2000,taux fixe,cosmitto,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034395/t%C3%A9l%C3%A9chargement%20%281%29.jpg1676034398986.jpg
+9,9.0,1.0,2022/11/01,1.0,1.0,1.0,1250,taux fixe,aziza,Semi-annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034662/t%C3%A9l%C3%A9chargement%20%286%29.png1676034664819.png
+10,10.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux variable,geant,Mensuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034288/t%C3%A9l%C3%A9chargement%20%283%29.png1676034292058.png
+11,11.0,1.0,2022/11/01,1.0,1.0,1.0,1100,taux variable,hannibal leasing,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034288/t%C3%A9l%C3%A9chargement%20%283%29.png1676034292058.png
+12,12.0,1.0,2022/11/01,1.0,1.0,1.0,1900,taux fixe,sofrecom,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034853/t%C3%A9l%C3%A9chargement%20%287%29.png1676034856402.png
+13,13.0,1.0,2022/11/01,1.0,1.0,1.0,850,taux variable,vermeg,Mensuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034618/t%C3%A9l%C3%A9chargement%20%285%29.png1676034621619.png
+14,14.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,poulina,Trimestriel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034556/t%C3%A9l%C3%A9chargement%20%284%29.png1676034559514.png
+15,15.0,1.0,2022/11/01,1.0,1.0,1.0,1450,taux fixe,sfbt,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035254/LogoSFBT1.png1676035257674.png
+16,16.0,1.0,2022/11/01,1.0,1.0,1.0,1600,taux variable,cactus prod,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034715/cactus-prod.webp1676034718437.webp
+17,4.0,1.0,2022/11/01,1.0,1.0,1.0,950,taux fixe,el hiwar tounsi,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034763/t%C3%A9l%C3%A9chargement%20%282%29.jpg1676034767041.jpg
+18,5.0,1.0,2022/11/01,1.0,1.0,1.0,700,zero coupon,etat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035433/1009611-Drapeau_de_la_Tunisie.jpg1676035436829.jpg
+19,6.0,1.0,2022/11/01,1.0,1.0,1.0,1300,zero coupon,atb,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035298/t%C3%A9l%C3%A9chargement%20%288%29.png1676035301763.png
+20,7.0,1.0,2022/11/01,1.0,1.0,1.0,1400,taux variable,magasin general,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034901/Logo_MG.jpg1676034904572.jpg
+21,8.0,1.0,2022/11/01,1.0,1.0,1.0,2000,taux variable,myteck,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035355/t%C3%A9l%C3%A9chargement%20%289%29.png1676035358399.png
+22,9.0,1.0,2022/11/01,1.0,1.0,1.0,1250,taux fixe,monoprix,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035194/5eeec4bcc58f1.png1676035197193.png
+23,10.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux fixe,carrefour,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035631/Carrefour-Coronavirus.png1676035634942.png
+24,11.0,1.0,2022/11/01,1.0,1.0,1.0,1100,zero coupon,etat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035433/1009611-Drapeau_de_la_Tunisie.jpg1676035436829.jpg
+25,12.0,1.0,2022/11/01,1.0,1.0,1.0,1900,taux variable,biat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033521/logo_biat_300x300.png1676033524389.png
+26,13.0,1.0,2022/11/01,1.0,1.0,1.0,850,taux fixe,bh bank,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033440/BH_BANK.png1676033443474.png
+27,14.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,uib leasing,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035682/uib1.jpg1676035685582.jpg
+28,15.0,1.0,2022/11/01,1.0,1.0,1.0,1450,taux variable,uib,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035682/uib1.jpg1676035685582.jpg
+29,16.0,1.0,2022/11/01,1.0,1.0,1.0,1600,taux variable,atb,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035298/t%C3%A9l%C3%A9chargement%20%288%29.png1676035301763.png
+30,4.0,1.0,2022/11/01,1.0,1.0,1.0,950,taux variable,tunisie leasing,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035584/TLF-Logo-A.jpg1676035587864.jpg
+31,5.0,1.0,2022/11/01,1.0,1.0,1.0,700,taux variable,gat assurance,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676039141/logo_0.png1676039144716.png
+32,6.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux variable,star assurance,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035861/avatar.jpg1676035857734.png
+33,7.0,1.0,2022/11/01,1.0,1.0,1.0,1400,zero coupon,etat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035433/1009611-Drapeau_de_la_Tunisie.jpg1676035436829.jpg
+34,8.0,1.0,2022/11/01,1.0,1.0,1.0,2000,taux fixe,etat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035433/1009611-Drapeau_de_la_Tunisie.jpg1676035436829.jpg
+35,9.0,1.0,2022/11/01,1.0,1.0,1.0,1250,taux fixe,bh bank,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033440/BH_BANK.png1676033443474.png
+36,10.0,1.0,2022/11/01,1.0,1.0,1.0,1300,taux fixe,wiki,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035929/1519864821166.jpg1676035932940.jpg
+37,11.0,1.0,2022/11/01,1.0,1.0,1.0,1100,taux variable,bna,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676035974/Logo_BNA.jpg1676035977382.jpg
+38,12.0,1.0,2022/11/01,1.0,1.0,1.0,1900,taux variable,stb,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676036042/Screenshot_20210115-174104_Word.jpg1676036045531.jpg
+39,13.0,1.0,2022/11/01,1.0,1.0,1.0,850,taux fixe,biat,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033521/logo_biat_300x300.png1676033524389.png
+40,14.0,1.0,2022/11/01,1.0,1.0,1.0,900,taux variable,attijari bank,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676034137/ag43-logo_attijari_bank.png1676034141177.png
+41,15.0,1.0,2022/11/01,1.0,1.0,1.0,1450,taux variable,bh leasing,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676036096/bhleasing22.jpg1676036099924.jpg
+42,16.0,1.0,2022/11/01,1.0,1.0,1.0,1600,taux fixe,bh assurance,Annuel,https://res.cloudinary.com/dlw3w0bei/image/upload/v1676033926/t%C3%A9l%C3%A9chargement%20%282%29.png1676033929972.png
